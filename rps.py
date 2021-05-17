@@ -7,4 +7,12 @@ def computerPlay():
     compSelected = random.choice(compSelections)
     return compSelected
 
+def userPlay():
+    while True:
+        playerSelection = input("Please enter Rock, Paper, or Scissors: ").lower()
+        if playerSelection == "rock" or playerSelection == "paper" or playerSelection == "scissors":
+            return playerSelection
+            break
+        
 print(computerPlay())
+print(userPlay())
