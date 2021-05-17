@@ -14,5 +14,5 @@ def userPlay():
             return playerSelection
             break
         
-print(computerPlay())
 print(userPlay())
+print(computerPlay())
