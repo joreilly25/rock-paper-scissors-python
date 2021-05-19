@@ -2,14 +2,17 @@ import random
 playerScore = 0
 compScore = 0
 
+
 def computerPlay():
     compSelections = ["rock", "paper", "scissors"]
     compSelection = random.choice(compSelections)
     return compSelection
 
+
 def userPlay():
     while True:
-        playerSelection = input("Please enter Rock, Paper, or Scissors: ").lower()
+        playerSelection = input(
+            "Please enter Rock, Paper, or Scissors: ").lower()
         if playerSelection == "rock" or playerSelection == "paper" or playerSelection == "scissors":
             return playerSelection
             break
@@ -17,6 +20,7 @@ def userPlay():
             break
         elif playerSelection == "help":
             print("Typing exit or close will stop program. if you want to play, please select rock paper or scissors.")
+
 
 def playRound(playerSelection, compSelection):
     global playerScore
@@ -40,14 +44,15 @@ def playRound(playerSelection, compSelection):
         playerScore += 1
         return print("You Win! Scissors beats Paper!")
     else:
-        return print ("Draw!")
+        return print("Draw!")
+
 
 def game():
     while True:
         playRound(userPlay(), computerPlay())
         print("Your Score: " + str(playerScore))
         print("Comp Score: " + str(compScore))
-        
+
         if playerScore >= 5:
             return print("Congrats You Win!")
             break
@@ -55,6 +60,7 @@ def game():
             return print("Oh no! Try again!")
             break
 
+
 game()
-        
+
 # playRound(userPlay(), computerPlay())
