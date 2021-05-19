@@ -15,7 +15,6 @@ def userPlay():
             "Please enter Rock, Paper, or Scissors: ").lower()
         if playerSelection == "rock" or playerSelection == "paper" or playerSelection == "scissors":
             return playerSelection
-            break
         elif playerSelection == "exit" or playerSelection == "close":
             break
         elif playerSelection == "help":
