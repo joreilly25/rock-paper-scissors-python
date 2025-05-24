@@ -40,7 +40,3 @@ Contributions are welcome! If you have any ideas for improvements or find any bu
 2.  Create a new branch for your feature or bug fix.
 3.  Make your changes.
 4.  Submit a pull request.
-
-## License
-
-This project is released under the MIT License. See the LICENSE file for details (though a LICENSE file is not yet created for this project, it's good practice to mention it).
